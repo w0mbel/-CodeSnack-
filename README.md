@@ -1,6 +1,6 @@
-# CodeSnack 🚀
+# </>CodeSnack</> 🚀
 
-Willkommen bei **CodeSnack**! Dieses Repository dient als zentrale und automatisch aktualisierte Datenbank für IPTV-Portal-URLs (Stalker-Portale) und den dazugehörigen MAC-Adressen.
+Willkommen bei **</>CodeSnack</>**! Dieses Repository dient als zentrale und automatisch aktualisierte Datenbank für IPTV-Portal-URLs (Stalker-Portale) und den dazugehörigen MAC-Adressen.
 
 ## 🌟 Features
 *   **Automatisierte Erfassung:** Ein eigens entwickelter Python-Crawler durchsucht das Netz nach neuen Portalen und MACs.
