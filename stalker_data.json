@@ -1,0 +1,17 @@
+[
+  {
+    "url": "http://dragon-iptv.de/c",
+    "macs": [
+      "00:1A:79:ED:24:E5",
+      "00:1A:79:XX:XX:XX"
+    ],
+    "status": "online"
+  },
+  {
+    "url": "http://anderes-portal.de/c",
+    "macs": [
+      "00:1A:79:YY:YY:YY"
+    ],
+    "status": "online"
+  }
+]
