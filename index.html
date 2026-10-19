@@ -4,8 +4,406 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSnack - Portal & MAC Liste</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --bg-card: #111111;
+            --bg-header: #0a0a0a;
+            --primary-cyan: #00e5ff;
+            --primary-green: #00ff00;
+            --text-main: #ffffff;
+            --text-muted: #888888;
+            --border-color: #222222;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            background-image: radial-gradient(circle at 50% 0%, #111a1f 0%, #050505 70%);
+            background-attachment: fixed;
+        }
+
+        /* HEADER & NAVIGATION */
+        header {
+            background-color: var(--bg-header);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-size: 2.2rem;
+            color: var(--primary-cyan);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+            padding: 10px 0;
+        }
+
+        .tab-btn:hover, .tab-btn.active {
+            color: var(--text-main);
+            border-bottom: 2px solid var(--primary-cyan);
+        }
+
+        /* LAYOUT & TABS */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* SLIDER */
+        .slider-container {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            background: #111;
+            height: 250px;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 300%;
+            height: 100%;
+        }
+
+        .slide {
+            width: 33.333%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #0d1117, #1a1a1a);
+            color: var(--primary-cyan);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background-color: var(--primary-cyan);
+        }
+
+        /* SUCHE */
+        .search-container {
+            margin-bottom: 2rem;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        #searchInput:focus {
+            outline: none;
+            border-color: var(--primary-cyan);
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+        }
+
+        /* PORTAL KARTEN */
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: #444;
+        }
+
+        .card-header {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .url-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0a0a0a;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid #222;
+        }
+
+        .portal-url {
+            font-family: "Courier New", monospace;
+            color: var(--text-main);
+            word-break: break-all;
+        }
+
+        .mac-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .mac-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0a0a0a;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            border: 1px solid #222;
+        }
+
+        .mac-item span {
+            font-family: "Courier New", monospace;
+            font-size: 0.9rem;
+        }
+
+        .btn-copy {
+            background: transparent;
+            color: var(--primary-cyan);
+            border: 1px solid var(--primary-cyan);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+
+        .btn-copy:hover {
+            background: var(--primary-cyan);
+            color: #000;
+        }
+
+        .btn-show-more {
+            background: #1a1a1a;
+            color: var(--text-main);
+            border: 1px solid #333;
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-show-more:hover {
+            background: #2a2a2a;
+        }
+
+        .hidden-macs {
+            display: none;
+        }
+
+        .hidden-macs.show {
+            display: grid;
+            margin-top: 10px;
+        }
+
+        /* DOWNLOAD SEITE */
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title span { color: var(--primary-green); }
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+        }
+
+        .download-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .download-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .dl-img-placeholder {
+            width: 100%;
+            height: 200px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            border: 1px solid #333;
+        }
+
+        .download-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .download-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .btn:active { transform: scale(0.98); }
+
+        .btn-green {
+            background: linear-gradient(90deg, #00ff00, #00cc00);
+            color: #000;
+        }
+
+        .btn-cyan {
+            background: linear-gradient(90deg, #00e5ff, #0099cc);
+            color: #000;
+        }
+
+        .dl-stats {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .dl-code {
+            background: #0a0a0a;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+            margin-top: 1rem;
+        }
+
+        .dl-code strong {
+            display: block;
+            font-size: 1.5rem;
+            color: var(--primary-cyan);
+            margin-top: 5px;
+        }
+
+        /* USERGUIDE */
+        .guide-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            border-radius: 15px;
+        }
+
+        .guide-container h2 {
+            color: var(--primary-cyan);
+            margin-bottom: 0.5rem;
+        }
+
+        .guide-container h3 {
+            margin-bottom: 2rem;
+            font-weight: normal;
+            color: var(--text-muted);
+        }
+
+        .guide-container h4 {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .guide-container p, .guide-container ul {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .guide-container ul { padding-left: 20px; }
+
+        .guide-container hr {
+            border: 0;
+            height: 1px;
+            background: var(--border-color);
+            margin: 3rem 0;
+        }
+    </style>
 </head>
 <body>
     <!-- HEADER & NAVIGATION -->
@@ -26,15 +424,9 @@
             <!-- SLIDER BANNER -->
             <div class="slider-container">
                 <div class="slider">
-                    <div class="slide active">
-                        <img src="https://via.placeholder.com/1000x300/0d1117/00e5ff?text=STBEMU+LIVE+for+Windows+%26+Android+TV" alt="Banner 1">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/1000x300/0d1117/00ff00?text=Mobile+%26+Tablet+V1.2.1" alt="Banner 2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/1000x300/0d1117/0088cc?text=Join+our+Telegram+Community" alt="Banner 3">
-                    </div>
+                    <div class="slide">STBEMU LIVE for Windows & Android TV</div>
+                    <div class="slide">Mobile & Tablet V1.2.1</div>
+                    <div class="slide">Join our Telegram Community</div>
                 </div>
                 <div class="slider-dots">
                     <span class="dot active" data-slide="0"></span>
@@ -56,14 +448,14 @@
 
         <!-- DOWNLOAD SECTION -->
         <section id="download" class="tab-content">
-            <h2 class="section-title">DOWNLOAD <span class="green">CENTER</span></h2>
+            <h2 class="section-title">DOWNLOAD <span>CENTER</span></h2>
             <p class="section-subtitle">Choose your platform to get started / Plattform auswählen</p>
 
             <div class="download-grid">
                 <!-- Card 1: Mobile -->
                 <div class="download-card">
                     <div class="dl-img-placeholder"></div>
-                    <h3>STBEMU LIVE <br><span class="green">Mobile & Tablet</span></h3>
+                    <h3>STBEMU LIVE <br><span style="color:var(--primary-green)">Mobile & Tablet</span></h3>
                     <p>The ultimate IPTV experience. No Portal or MAC addresses required.</p>
                     <a href="#" class="btn btn-green">Download Mobile (APK/IPA)</a>
                     <div class="dl-stats">2,148 downloads | (Last updated: Heute)</div>
@@ -72,7 +464,7 @@
                 <!-- Card 2: Windows -->
                 <div class="download-card">
                     <div class="dl-img-placeholder"></div>
-                    <h3>STBEMU LIVE <br><span class="cyan">Windows PC</span></h3>
+                    <h3>STBEMU LIVE <br><span style="color:var(--primary-cyan)">Windows PC</span></h3>
                     <p>Stop searching for emulators! Experience seamless streaming directly on your PC.</p>
                     <a href="#" class="btn btn-cyan">Download for Windows (RAR/EXE)</a>
                     <div class="dl-stats">3,242 downloads | (Last updated: Heute)</div>
@@ -81,7 +473,7 @@
                 <!-- Card 3: Android TV -->
                 <div class="download-card">
                     <div class="dl-img-placeholder"></div>
-                    <h3>STBEMU LIVE <br><span class="green">Android TV & Box</span></h3>
+                    <h3>STBEMU LIVE <br><span style="color:var(--primary-green)">Android TV & Box</span></h3>
                     <p>Transform your living room! Optimized specifically for Android TV.</p>
                     <a href="#" class="btn btn-green">Download Android TV (APK)</a>
                     <div class="dl-stats">1,500 downloads | (Last updated: Heute)</div>
@@ -151,6 +543,150 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- TAB STEUERUNG ---
+            const tabs = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    const targetId = tab.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+
+            // --- SLIDER STEUERUNG ---
+            const slider = document.querySelector('.slider');
+            const dots = document.querySelectorAll('.dot');
+            let currentSlide = 0;
+            const totalSlides = dots.length;
+
+            function goToSlide(index) {
+                currentSlide = index;
+                slider.style.transform = `translateX(-${currentSlide * 33.333}%)`;
+                dots.forEach(d => d.classList.remove('active'));
+                dots[currentSlide].classList.add('active');
+            }
+
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                goToSlide(currentSlide);
+            }, 5000);
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => goToSlide(index));
+            });
+
+            // --- DATEN LADEN & KARTEN RENDERN ---
+            const container = document.getElementById('data-container');
+            const searchInput = document.getElementById('searchInput');
+            let allData = [];
+
+            function loadData() {
+                fetch('stalker_data.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        allData = data;
+                        render(allData);
+                    })
+                    .catch(error => {
+                        container.innerHTML = '<p style="color:red;">Fehler beim Laden der Daten. Prüfe die Konsole (F12).</p>';
+                        console.error(error);
+                    });
+            }
+
+            function render(data) {
+                container.innerHTML = '';
+                if (data.length === 0) {
+                    container.innerHTML = '<p style="text-align:center; color:#888;">Keine Ergebnisse gefunden.</p>';
+                    return;
+                }
+                
+                data.forEach((item, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    
+                    let urlHtml = `
+                        <div class="url-row">
+                            <span class="portal-url">${item.url}</span>
+                            <button class="btn-copy" onclick="copyText('${item.url}', this)">URL Kopieren</button>
+                        </div>
+                    `;
+
+                    let macsArray = item.macs || [];
+                    let visibleMacs = macsArray.slice(0, 4);
+                    let hiddenMacs = macsArray.slice(4);
+
+                    let macsHtml = '<div class="mac-grid">';
+                    visibleMacs.forEach(mac => {
+                        macsHtml += `
+                            <div class="mac-item">
+                                <span>${mac}</span>
+                                <button class="btn-copy" onclick="copyText('${mac}', this)">Kopieren</button>
+                            </div>
+                        `;
+                    });
+                    macsHtml += '</div>';
+
+                    if (hiddenMacs.length > 0) {
+                        let hiddenMacsHtml = '<div class="mac-grid hidden-macs" id="hidden-macs-' + index + '">';
+                        hiddenMacs.forEach(mac => {
+                            hiddenMacsHtml += `
+                                <div class="mac-item">
+                                    <span>${mac}</span>
+                                    <button class="btn-copy" onclick="copyText('${mac}', this)">Kopieren</button>
+                                </div>
+                            `;
+                        });
+                        hiddenMacsHtml += '</div>';
+                        
+                        macsHtml += hiddenMacsHtml;
+                        macsHtml += `<button class="btn-show-more" onclick="toggleMacs(${index}, this)">+ ${hiddenMacs.length} weitere MACs anzeigen</button>`;
+                    }
+
+                    card.innerHTML = `
+                        <div class="card-header">• DAILY UPDATES • CodeSnack •</div>
+                        ${urlHtml}
+                        ${macsHtml}
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            }
+
+            searchInput.addEventListener('input', (e) => {
+                const term = e.target.value.toLowerCase();
+                const filtered = allData.filter(item => item.url.toLowerCase().includes(term));
+                render(filtered);
+            });
+
+            loadData();
+        });
+
+        function copyText(text, btnElement) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btnElement.textContent;
+                btnElement.textContent = 'Kopiert!';
+                setTimeout(() => { btnElement.textContent = originalText; }, 2000);
+            });
+        }
+
+        function toggleMacs(index, btnElement) {
+            const hiddenDiv = document.getElementById('hidden-macs-' + index);
+            if (hiddenDiv.classList.contains('show')) {
+                hiddenDiv.classList.remove('show');
+                btnElement.textContent = `+ weitere MACs anzeigen`;
+            } else {
+                hiddenDiv.classList.add('show');
+                btnElement.textContent = `- Weniger anzeigen`;
+            }
+        }
+    </script>
 </body>
 </html>
