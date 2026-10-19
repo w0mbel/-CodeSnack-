@@ -4,83 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSnack - Portal & MAC Liste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         :root {
-            --bg-dark: #050505;
-            --bg-card: #111111;
-            --bg-header: #0a0a0a;
-            --primary-cyan: #00e5ff;
-            --primary-green: #00ff00;
-            --text-main: #ffffff;
-            --text-muted: #888888;
-            --border-color: #222222;
+            --bg-body: #0a0c10;
+            --bg-card: #13161c;
+            --bg-header: #0d1015;
+            --cyan: #00d2ff;
+            --green: #00e676;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --border: #21262d;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', sans-serif;
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
+            background-color: var(--bg-body);
+            color: var(--text);
             line-height: 1.6;
-            background-image: radial-gradient(circle at 50% 0%, #111a1f 0%, #050505 70%);
+            background-image: radial-gradient(circle at top, #131e29 0%, #0a0c10 60%);
             background-attachment: fixed;
         }
 
-        /* HEADER & NAVIGATION */
+        .top-bar {
+            background: #000;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.85rem;
+            color: var(--cyan);
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        /* HEADER */
         header {
             background-color: var(--bg-header);
-            padding: 1.5rem 0;
+            padding: 1rem 0;
             text-align: center;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border);
         }
 
         .logo {
-            font-size: 2.2rem;
-            color: var(--primary-cyan);
-            margin-bottom: 1rem;
-            text-shadow: 0 0 15px rgba(0, 229, 255, 0.4);
+            font-size: 2rem;
+            color: var(--cyan);
             font-weight: 800;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
         }
 
-        .tabs {
+        .nav-tabs {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .tab-btn {
             background: none;
             border: none;
             color: var(--text-muted);
-            font-size: 1.1rem;
-            font-weight: bold;
+            font-size: 0.95rem;
+            font-weight: 600;
             cursor: pointer;
+            padding: 10px 10px;
             transition: color 0.3s;
-            padding: 10px 0;
+            text-transform: uppercase;
         }
 
         .tab-btn:hover, .tab-btn.active {
-            color: var(--text-main);
-            border-bottom: 2px solid var(--primary-cyan);
+            color: #fff;
+            border-bottom: 2px solid var(--cyan);
         }
 
-        /* LAYOUT & TABS */
+        /* MAIN LAYOUT */
         main {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 2rem 1rem;
         }
 
         .tab-content {
             display: none;
-            animation: fadeIn 0.4s;
+            animation: fadeIn 0.3s ease-in-out;
         }
 
         .tab-content.active {
@@ -92,601 +104,406 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* SLIDER */
+        /* HOME SLIDER */
         .slider-container {
             position: relative;
             width: 100%;
-            border-radius: 15px;
+            border-radius: 12px;
             overflow: hidden;
             margin-bottom: 2rem;
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--border);
             background: #111;
-            height: 250px;
+            height: 350px;
         }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            width: 300%;
-            height: 100%;
-        }
-
         .slide {
-            width: 33.333%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 100%; height: 100%; display: none;
+            align-items: center; justify-content: center;
             background: linear-gradient(45deg, #0d1117, #1a1a1a);
-            color: var(--primary-cyan);
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
+            color: var(--cyan); font-size: 2rem; font-weight: bold; text-align: center;
         }
-
-        .slider-dots {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .dot {
-            height: 10px;
-            width: 10px;
-            margin: 0 5px;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            display: inline-block;
-            cursor: pointer;
-        }
-
-        .dot.active {
-            background-color: var(--primary-cyan);
-        }
+        .slide.active { display: flex; }
 
         /* SUCHE */
-        .search-container {
-            margin-bottom: 2rem;
+        .search-box { margin-bottom: 2rem; }
+        .search-box input {
+            width: 100%; padding: 1rem 1.5rem; background: #0d1117;
+            border: 1px solid var(--border); border-radius: 8px; color: white; font-size: 1rem;
         }
+        .search-box input:focus { outline: none; border-color: var(--cyan); }
 
-        #searchInput {
-            width: 100%;
-            padding: 1.2rem;
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 8px;
-            color: white;
-            font-size: 1rem;
-            transition: border-color 0.3s;
+        /* PORTAL KARTEN (STBemu) */
+        .portal-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;
         }
-
-        #searchInput:focus {
-            outline: none;
-            border-color: var(--primary-cyan);
-            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
-        }
-
-        /* PORTAL KARTEN */
-        .card {
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            transition: border-color 0.3s;
-        }
-
-        .card:hover {
-            border-color: #444;
-        }
-
-        .card-header {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-            letter-spacing: 1px;
-        }
-
+        .card-title { color: var(--text-muted); font-size: 0.8rem; margin-bottom: 1rem; letter-spacing: 1px; }
         .url-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #0a0a0a;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            border: 1px solid #222;
+            display: flex; justify-content: space-between; align-items: center;
+            background: #0d1117; border: 1px solid var(--border); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;
         }
-
-        .portal-url {
-            font-family: "Courier New", monospace;
-            color: var(--text-main);
-            word-break: break-all;
-        }
-
-        .mac-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .mac-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #0a0a0a;
-            padding: 0.6rem 1rem;
-            border-radius: 6px;
-            border: 1px solid #222;
-        }
-
-        .mac-item span {
-            font-family: "Courier New", monospace;
-            font-size: 0.9rem;
-        }
-
+        .url-text { font-family: monospace; font-size: 1rem; color: var(--text); word-break: break-all; }
         .btn-copy {
-            background: transparent;
-            color: var(--primary-cyan);
-            border: 1px solid var(--primary-cyan);
-            padding: 0.3rem 0.8rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            transition: all 0.2s;
+            background: rgba(0, 210, 255, 0.1); color: var(--cyan); border: 1px solid var(--cyan);
+            padding: 0.4rem 1rem; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;
+        }
+        .btn-copy:hover { background: var(--cyan); color: #000; }
+
+        .macs-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+        .mac-item {
+            display: flex; justify-content: space-between; align-items: center;
+            background: #0d1117; border: 1px solid var(--border); padding: 0.6rem 1rem; border-radius: 6px;
+        }
+        .mac-text { font-family: monospace; font-size: 0.9rem; }
+        .btn-expand {
+            background: #0d1117; color: var(--text); border: 1px solid var(--border);
+            width: 100%; padding: 0.8rem; border-radius: 6px; cursor: pointer; font-weight: 600; margin-top: 10px;
+        }
+        .btn-expand:hover { background: #1a1f27; }
+        .macs-hidden { display: none; }
+        .macs-hidden.show { display: grid; }
+
+        /* SIMPLE LISTS (Portale, M3U, Xtream) */
+        .simple-list-item {
+            background: var(--bg-card); border: 1px solid var(--border);
+            padding: 1rem; border-radius: 8px; margin-bottom: 10px;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .simple-list-item span { font-family: monospace; word-break: break-all; }
+
+        /* MAC COMBO */
+        .combo-box {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 12px; padding: 2rem; text-align: center;
+        }
+        .combo-box h2 { color: var(--cyan); margin-bottom: 1rem; }
+        .combo-textarea {
+            width: 100%; height: 400px; background: #0d1117; color: var(--green);
+            font-family: monospace; border: 1px solid var(--border);
+            padding: 1rem; border-radius: 8px; resize: vertical; margin-bottom: 1rem;
         }
 
-        .btn-copy:hover {
-            background: var(--primary-cyan);
-            color: #000;
-        }
+        /* DOWNLOAD & GUIDE (unverändert) */
+        .dl-header { text-align: center; margin-bottom: 3rem; }
+        .dl-header h2 { font-size: 2.5rem; font-weight: 800; color: #fff; }
+        .dl-header h2 span { color: var(--green); }
+        .dl-header p { color: var(--text-muted); margin-top: 0.5rem; }
+        .dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start; }
+        .dl-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; text-align: center; padding-bottom: 1.5rem; }
+        .dl-image { width: 100%; height: 180px; background: #1a1f27; display: flex; align-items: center; justify-content: center; color: #333; font-size: 3rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+        .dl-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+        .dl-card h3 span { color: var(--green); }
+        .dl-card.windows h3 span { color: var(--cyan); }
+        .dl-card p { color: var(--text-muted); font-size: 0.85rem; padding: 0 1.5rem; margin-bottom: 1.5rem; min-height: 50px; }
+        .btn-dl { display: block; margin: 0 1.5rem 1rem 1.5rem; padding: 1rem; border-radius: 8px; font-weight: 800; text-decoration: none; color: #000; transition: transform 0.2s; }
+        .btn-dl:hover { transform: translateY(-2px); }
+        .btn-dl.green { background: linear-gradient(90deg, #00e676, #00c853); }
+        .btn-dl.cyan { background: linear-gradient(90deg, #00d2ff, #0088cc); color: #fff;}
+        .dl-stats { margin: 0 1.5rem; border: 1px solid var(--border); padding: 0.8rem; border-radius: 8px; font-size: 0.8rem; color: var(--text-muted); background: #0d1117; }
+        .dl-code { margin-top: 1rem; font-size: 0.9rem; color: var(--text); }
+        .dl-code strong { display: block; font-size: 1.5rem; color: #fff; margin-top: 5px; }
+        .guide-box { background: var(--bg-card); border: 1px solid var(--border); padding: 3rem; border-radius: 12px; }
+        .guide-box h2 { color: var(--cyan); margin-bottom: 0.5rem; }
+        .guide-box h3 { color: var(--text-muted); margin-bottom: 2rem; font-weight: 400;}
+        .guide-box h4 { margin: 2rem 0 0.5rem 0; }
+        .guide-box p, .guide-box ul { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .guide-box ul { padding-left: 20px; }
+        .guide-box hr { border: 0; height: 1px; background: var(--border); margin: 3rem 0; }
 
-        .btn-show-more {
-            background: #1a1a1a;
-            color: var(--text-main);
-            border: 1px solid #333;
-            width: 100%;
-            padding: 0.8rem;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background 0.2s;
-        }
-
-        .btn-show-more:hover {
-            background: #2a2a2a;
-        }
-
-        .hidden-macs {
-            display: none;
-        }
-
-        .hidden-macs.show {
-            display: grid;
-            margin-top: 10px;
-        }
-
-        /* DOWNLOAD SEITE */
-        .section-title {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 0.5rem;
-        }
-
-        .section-title span { color: var(--primary-green); }
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            margin-bottom: 3rem;
-        }
-
-        .download-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .download-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            max-width: 500px;
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        .dl-img-placeholder {
-            width: 100%;
-            height: 200px;
-            background: #1a1a1a;
-            border-radius: 10px;
-            margin-bottom: 1.5rem;
-            border: 1px solid #333;
-        }
-
-        .download-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .download-card p {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 1rem;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            transition: transform 0.2s;
-        }
-
-        .btn:active { transform: scale(0.98); }
-
-        .btn-green {
-            background: linear-gradient(90deg, #00ff00, #00cc00);
-            color: #000;
-        }
-
-        .btn-cyan {
-            background: linear-gradient(90deg, #00e5ff, #0099cc);
-            color: #000;
-        }
-
-        .dl-stats {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .dl-code {
-            background: #0a0a0a;
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid #333;
-            margin-top: 1rem;
-        }
-
-        .dl-code strong {
-            display: block;
-            font-size: 1.5rem;
-            color: var(--primary-cyan);
-            margin-top: 5px;
-        }
-
-        /* USERGUIDE */
-        .guide-container {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            padding: 3rem;
-            border-radius: 15px;
-        }
-
-        .guide-container h2 {
-            color: var(--primary-cyan);
-            margin-bottom: 0.5rem;
-        }
-
-        .guide-container h3 {
-            margin-bottom: 2rem;
-            font-weight: normal;
-            color: var(--text-muted);
-        }
-
-        .guide-container h4 {
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-            color: var(--text-main);
-        }
-
-        .guide-container p, .guide-container ul {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .guide-container ul { padding-left: 20px; }
-
-        .guide-container hr {
-            border: 0;
-            height: 1px;
-            background: var(--border-color);
-            margin: 3rem 0;
-        }
+        .no-data { text-align: center; color: var(--text-muted); padding: 3rem; }
     </style>
 </head>
 <body>
-    <!-- HEADER & NAVIGATION -->
+
+    <div class="top-bar">
+        <i class="fab fa-telegram"></i> JOIN TELEGRAM FOR INSTANT DAILY UPDATES!
+    </div>
+
     <header>
-        <div class="logo-container">
-            <h1 class="logo">&lt;/&gt;CodeSnack/&gt;</h1>
-        </div>
-        <nav class="tabs">
-            <button class="tab-btn active" data-target="home">Home</button>
-            <button class="tab-btn" data-target="download">Download</button>
-            <button class="tab-btn" data-target="guide">Userguide</button>
+        <div class="logo">&lt;/&gt;CodeSnack/&gt;</div>
+        <nav class="nav-tabs">
+            <button class="tab-btn active" onclick="openTab('home', this)">Home</button>
+            <button class="tab-btn" onclick="openTab('stbemu', this)">STBemu</button>
+            <button class="tab-btn" onclick="openTab('m3u', this)">M3U</button>
+            <button class="tab-btn" onclick="openTab('xtream', this)">Xtream</button>
+            <button class="tab-btn" onclick="openTab('portale', this)">Portale</button>
+            <button class="tab-btn" onclick="openTab('maccombo', this)">MAC Combo</button>
+            <button class="tab-btn" onclick="openTab('download', this)">Download</button>
+            <button class="tab-btn" onclick="openTab('guide', this)">Userguide</button>
         </nav>
     </header>
 
     <main>
-        <!-- HOME SECTION -->
-        <section id="home" class="tab-content active">
-            <!-- SLIDER BANNER -->
+        <!-- HOME (Nur Banner, keine Listen) -->
+        <div id="home" class="tab-content active">
             <div class="slider-container">
-                <div class="slider">
-                    <div class="slide">STBEMU LIVE for Windows & Android TV</div>
-                    <div class="slide">Mobile & Tablet V1.2.1</div>
-                    <div class="slide">Join our Telegram Community</div>
-                </div>
-                <div class="slider-dots">
-                    <span class="dot active" data-slide="0"></span>
-                    <span class="dot" data-slide="1"></span>
-                    <span class="dot" data-slide="2"></span>
-                </div>
+                <div class="slide active">STBEMU LIVE for Windows & Android TV</div>
+                <div class="slide">Mobile & Tablet V1.2.1</div>
+                <div class="slide">Join our Telegram Community</div>
             </div>
+            <div style="text-align:center; padding: 2rem; color:var(--text-muted);">
+                <h2 style="color:#fff; margin-bottom:1rem;">Willkommen bei CodeSnack</h2>
+                <p>Wähle oben im Menü eine Kategorie aus, um die aktuellen Daten zu sehen.</p>
+            </div>
+        </div>
 
-            <!-- SUCHE -->
-            <div class="search-container">
+        <!-- STBEMU (Nur URLs mit MACs) -->
+        <div id="stbemu" class="tab-content">
+            <div class="search-box">
                 <input type="text" id="searchInput" placeholder="Suche nach Portal-URL...">
             </div>
-
-            <!-- DATEN KARTEN -->
-            <div id="data-container">
-                <!-- Karten werden per JS eingefügt -->
+            <div id="stbemu-container">
+                <p class="no-data">Lade Daten...</p>
             </div>
-        </section>
+        </div>
 
-        <!-- DOWNLOAD SECTION -->
-        <section id="download" class="tab-content">
-            <h2 class="section-title">DOWNLOAD <span>CENTER</span></h2>
-            <p class="section-subtitle">Choose your platform to get started / Plattform auswählen</p>
+        <!-- M3U -->
+        <div id="m3u" class="tab-content">
+            <h2 style="color:var(--cyan); margin-bottom: 1.5rem;">M3U Playlists</h2>
+            <div id="m3u-container">
+                <p class="no-data">Noch keine M3U-Daten vorhanden.</p>
+            </div>
+        </div>
 
-            <div class="download-grid">
-                <!-- Card 1: Mobile -->
-                <div class="download-card">
-                    <div class="dl-img-placeholder"></div>
-                    <h3>STBEMU LIVE <br><span style="color:var(--primary-green)">Mobile & Tablet</span></h3>
-                    <p>The ultimate IPTV experience. No Portal or MAC addresses required.</p>
-                    <a href="#" class="btn btn-green">Download Mobile (APK/IPA)</a>
+        <!-- XTREAM -->
+        <div id="xtream" class="tab-content">
+            <h2 style="color:var(--cyan); margin-bottom: 1.5rem;">Xtream Codes</h2>
+            <div id="xtream-container">
+                <p class="no-data">Noch keine Xtream-Daten vorhanden.</p>
+            </div>
+        </div>
+
+        <!-- PORTALE (Nur URLs ohne MACs) -->
+        <div id="portale" class="tab-content">
+            <h2 style="color:var(--cyan); margin-bottom: 1.5rem;">Portale (ohne MAC)</h2>
+            <div id="portale-container">
+                <p class="no-data">Lade Daten...</p>
+            </div>
+        </div>
+
+        <!-- MAC COMBO -->
+        <div id="maccombo" class="tab-content">
+            <div class="combo-box">
+                <h2>MAC Combo Liste</h2>
+                <p style="color:var(--text-muted); margin-bottom: 1rem;">Alle eindeutigen MAC-Adressen (eine pro Zeile).</p>
+                <textarea id="combo-textarea" class="combo-textarea" readonly></textarea>
+                <button class="btn-copy" style="padding: 1rem 2rem; font-size: 1rem;" onclick="copyCombo()">Alle kopieren</button>
+            </div>
+        </div>
+
+        <!-- DOWNLOAD -->
+        <div id="download" class="tab-content">
+            <div class="dl-header">
+                <h2>DOWNLOAD <span>CENTER</span></h2>
+                <p>Choose your platform to get started</p>
+            </div>
+            <div class="dl-grid">
+                <div class="dl-card">
+                    <div class="dl-image"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>STBEMU LIVE<br><span>Mobile & Tablet</span></h3>
+                    <p>The ultimate IPTV experience. No Portal or MAC required.</p>
+                    <a href="#" class="btn-dl green"><i class="fab fa-android"></i> Download Mobile (APK/IPA)</a>
                     <div class="dl-stats">2,148 downloads | (Last updated: Heute)</div>
                 </div>
-
-                <!-- Card 2: Windows -->
-                <div class="download-card">
-                    <div class="dl-img-placeholder"></div>
-                    <h3>STBEMU LIVE <br><span style="color:var(--primary-cyan)">Windows PC</span></h3>
-                    <p>Stop searching for emulators! Experience seamless streaming directly on your PC.</p>
-                    <a href="#" class="btn btn-cyan">Download for Windows (RAR/EXE)</a>
+                <div class="dl-card windows">
+                    <div class="dl-image"><i class="fas fa-desktop"></i></div>
+                    <h3>STBEMU LIVE<br><span>Windows PC</span></h3>
+                    <p>Stop searching for emulators! Experience seamless streaming.</p>
+                    <a href="#" class="btn-dl cyan"><i class="fab fa-windows"></i> Download for Windows (RAR/EXE)</a>
                     <div class="dl-stats">3,242 downloads | (Last updated: Heute)</div>
                 </div>
-
-                <!-- Card 3: Android TV -->
-                <div class="download-card">
-                    <div class="dl-img-placeholder"></div>
-                    <h3>STBEMU LIVE <br><span style="color:var(--primary-green)">Android TV & Box</span></h3>
-                    <p>Transform your living room! Optimized specifically for Android TV.</p>
-                    <a href="#" class="btn btn-green">Download Android TV (APK)</a>
+                <div class="dl-card">
+                    <div class="dl-image"><i class="fas fa-tv"></i></div>
+                    <h3>STBEMU LIVE<br><span>Android TV & Box</span></h3>
+                    <p>Transform your living room! Optimized for Android TV.</p>
+                    <a href="#" class="btn-dl green"><i class="fab fa-android"></i> Download Android TV (APK)</a>
                     <div class="dl-stats">1,500 downloads | (Last updated: Heute)</div>
-                    <div class="dl-code">
-                        Downloader App Code:<br>
-                        <strong>[ 5154921 ]</strong>
-                    </div>
+                    <div class="dl-code">Downloader App Code:<br><strong>[ 5154921 ]</strong></div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- USERGUIDE SECTION -->
-        <section id="guide" class="tab-content">
-            <div class="guide-container">
-                <!-- ENGLISCH -->
-                <h2>STB Emu Setup Guide & User Manual</h2>
-                <h3>Ultimate Setup, Portals & MAC Addresses</h3>
-                
-                <h4>What is STB Emu?</h4>
-                <p>STB Emu is a powerful emulator that allows you to experience IPTV services on your Android devices and Smart TVs.</p>
-
-                <h4>How to install</h4>
-                <ul>
-                    <li><strong>Android Devices:</strong> Open the Google Play Store and search for "STB Emu".</li>
-                    <li><strong>Smart TVs:</strong> Find the app in the official app store.</li>
-                </ul>
-
-                <h4>How to Configure Portals and MAC Addresses</h4>
-                <ul>
-                    <li><strong>Open Settings:</strong> Launch the app and go to the top-right menu.</li>
-                    <li><strong>Profiles:</strong> Select "Profiles" and then "Add Profile".</li>
-                    <li><strong>Portal Settings:</strong> Enter the Portal URL (e.g., http://url/c).</li>
-                    <li><strong>STB Configuration:</strong> Enter the MAC Address from our list.</li>
-                </ul>
-
-                <h4>Common Errors & Solutions</h4>
-                <p><strong>Authentication Failed:</strong> The MAC address is in use or expired. Check our latest daily posts.</p>
-                <p><strong>Host Not Found:</strong> Double-check the Portal URL for typos.</p>
-
-                <hr>
-
-                <!-- DEUTSCH -->
-                <h2>STB Emu Anleitung & Benutzerhandbuch</h2>
-                <h3>Ultimatives Setup, Portale & MAC-Adressen</h3>
-                
-                <h4>Was ist STB Emu?</h4>
-                <p>STB Emu ist ein leistungsstarker Emulator, mit dem du IPTV-Dienste auf deinen Android-Geräten und Smart-TVs nutzen kannst.</p>
-
-                <h4>Installation</h4>
-                <ul>
-                    <li><strong>Android-Geräte:</strong> Öffne den Google Play Store und suche nach "STB Emu".</li>
-                    <li><strong>Smart-TVs:</strong> Suche die App im offiziellen App-Store deines TVs.</li>
-                </ul>
-
-                <h4>Portale und MAC-Adressen konfigurieren</h4>
-                <ul>
-                    <li><strong>Einstellungen öffnen:</strong> Starte die App und gehe ins Menü oben rechts.</li>
-                    <li><strong>Profile:</strong> Wähle "Profiles" und dann "Add Profile".</li>
-                    <li><strong>Portal-Einstellungen:</strong> Gib die Portal-URL ein (z.B. http://url/c).</li>
-                    <li><strong>STB-Konfiguration:</strong> Gib die MAC-Adresse aus unserer Liste ein.</li>
-                </ul>
-
-                <h4>Häufige Fehler & Lösungen</h4>
-                <p><strong>Authentication Failed (Anmeldung fehlgeschlagen):</strong> Die MAC-Adresse wird bereits benutzt oder ist abgelaufen. Schau in unsere neuesten Listen.</p>
-                <p><strong>Host Not Found (Server nicht gefunden):</strong> Überprüfe die Portal-URL auf Tippfehler.</p>
+        <!-- GUIDE -->
+        <div id="guide" class="tab-content">
+            <div class="guide-box">
+                <h2>STB Emu Setup Guide</h2>
+                <p>Wähle das Tutorial für dein Gerät (Platzhalter).</p>
             </div>
-        </section>
+        </div>
     </main>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        let allData = [];
+
+        // TABS STEUERUNG
+        function openTab(tabId, btnElement) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
             
-            // --- TAB STEUERUNG ---
-            const tabs = document.querySelectorAll('.tab-btn');
-            const contents = document.querySelectorAll('.tab-content');
+            document.getElementById(tabId).classList.add('active');
+            if(btnElement) btnElement.classList.add('active');
+        }
 
-            tabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    tabs.forEach(t => t.classList.remove('active'));
-                    contents.forEach(c => c.classList.remove('active'));
-
-                    tab.classList.add('active');
-                    const targetId = tab.getAttribute('data-target');
-                    document.getElementById(targetId).classList.add('active');
-                });
+        // DATEN LADEN UND VERTEILEN
+        fetch('stalker_data.json')
+            .then(res => res.json())
+            .then(data => {
+                allData = data;
+                processData();
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('stbemu-container').innerHTML = '<p class="no-data" style="color:red;">Fehler beim Laden der stalker_data.json</p>';
             });
 
-            // --- SLIDER STEUERUNG ---
-            const slider = document.querySelector('.slider');
-            const dots = document.querySelectorAll('.dot');
-            let currentSlide = 0;
-            const totalSlides = dots.length;
+        function processData() {
+            const stbemuContainer = document.getElementById('stbemu-container');
+            const portaleContainer = document.getElementById('portale-container');
+            const comboTextarea = document.getElementById('combo-textarea');
 
-            function goToSlide(index) {
-                currentSlide = index;
-                slider.style.transform = `translateX(-${currentSlide * 33.333}%)`;
-                dots.forEach(d => d.classList.remove('active'));
-                dots[currentSlide].classList.add('active');
-            }
+            stbemuContainer.innerHTML = '';
+            portaleContainer.innerHTML = '';
+            
+            let allMacs = new Set();
+            let stbemuCount = 0;
+            let portaleCount = 0;
 
-            setInterval(() => {
-                currentSlide = (currentSlide + 1) % totalSlides;
-                goToSlide(currentSlide);
-            }, 5000);
-
-            dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => goToSlide(index));
-            });
-
-            // --- DATEN LADEN & KARTEN RENDERN ---
-            const container = document.getElementById('data-container');
-            const searchInput = document.getElementById('searchInput');
-            let allData = [];
-
-            function loadData() {
-                fetch('stalker_data.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        allData = data;
-                        render(allData);
-                    })
-                    .catch(error => {
-                        container.innerHTML = '<p style="color:red;">Fehler beim Laden der Daten. Prüfe die Konsole (F12).</p>';
-                        console.error(error);
-                    });
-            }
-
-            function render(data) {
-                container.innerHTML = '';
-                if (data.length === 0) {
-                    container.innerHTML = '<p style="text-align:center; color:#888;">Keine Ergebnisse gefunden.</p>';
-                    return;
-                }
+            allData.forEach((item, index) => {
+                const hasMacs = item.macs && item.macs.length > 0;
                 
-                data.forEach((item, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    
-                    let urlHtml = `
-                        <div class="url-row">
-                            <span class="portal-url">${item.url}</span>
-                            <button class="btn-copy" onclick="copyText('${item.url}', this)">URL Kopieren</button>
+                // MACs für die Combo-Liste sammeln
+                if (hasMacs) {
+                    item.macs.forEach(mac => allMacs.add(mac));
+                }
+
+                // In STBemu oder Portale einsortieren
+                if (hasMacs) {
+                    stbemuCount++;
+                    stbemuContainer.appendChild(createPortalCard(item, index));
+                } else {
+                    portaleCount++;
+                    portaleContainer.appendChild(createSimpleItem(item.url));
+                }
+            });
+
+            if (stbemuCount === 0) stbemuContainer.innerHTML = '<p class="no-data">Keine STBemu Einträge gefunden.</p>';
+            if (portaleCount === 0) portaleContainer.innerHTML = '<p class="no-data">Keine Portale ohne MAC gefunden.</p>';
+
+            // Combo-Liste befüllen
+            comboTextarea.value = Array.from(allMacs).sort().join('\n');
+        }
+
+        // Karte für STBemu bauen
+        function createPortalCard(item, index) {
+            const card = document.createElement('div');
+            card.className = 'portal-card';
+
+            let urlHtml = `
+                <div class="card-title">• DAILY UPDATES • CodeSnack •</div>
+                <div class="url-row">
+                    <span class="url-text">${item.url}</span>
+                    <button class="btn-copy" onclick="copyText('${item.url}', this)">URL Kopieren</button>
+                </div>
+            `;
+
+            let macsArray = item.macs || [];
+            let visibleMacs = macsArray.slice(0, 4);
+            let hiddenMacs = macsArray.slice(4);
+
+            let macsHtml = '<div class="macs-container">';
+            visibleMacs.forEach(mac => {
+                macsHtml += `
+                    <div class="mac-item">
+                        <span class="mac-text">${mac}</span>
+                        <button class="btn-copy" onclick="copyText('${mac}', this)">Kopieren</button>
+                    </div>
+                `;
+            });
+            macsHtml += '</div>';
+
+            if (hiddenMacs.length > 0) {
+                let hiddenId = 'hidden-' + index;
+                macsHtml += `<div id="${hiddenId}" class="macs-container macs-hidden">`;
+                hiddenMacs.forEach(mac => {
+                    macsHtml += `
+                        <div class="mac-item">
+                            <span class="mac-text">${mac}</span>
+                            <button class="btn-copy" onclick="copyText('${mac}', this)">Kopieren</button>
                         </div>
                     `;
+                });
+                macsHtml += `</div>`;
+                macsHtml += `<button class="btn-expand" onclick="toggleMacs('${hiddenId}', this)">+ ${hiddenMacs.length} weitere MACs anzeigen</button>`;
+            }
 
-                    let macsArray = item.macs || [];
-                    let visibleMacs = macsArray.slice(0, 4);
-                    let hiddenMacs = macsArray.slice(4);
+            card.innerHTML = urlHtml + macsHtml;
+            return card;
+        }
 
-                    let macsHtml = '<div class="mac-grid">';
-                    visibleMacs.forEach(mac => {
-                        macsHtml += `
-                            <div class="mac-item">
-                                <span>${mac}</span>
-                                <button class="btn-copy" onclick="copyText('${mac}', this)">Kopieren</button>
-                            </div>
-                        `;
-                    });
-                    macsHtml += '</div>';
+        // Einfache Zeile für Portale bauen
+        function createSimpleItem(url) {
+            const div = document.createElement('div');
+            div.className = 'simple-list-item';
+            div.innerHTML = `
+                <span>${url}</span>
+                <button class="btn-copy" onclick="copyText('${url}', this)">Kopieren</button>
+            `;
+            return div;
+        }
 
-                    if (hiddenMacs.length > 0) {
-                        let hiddenMacsHtml = '<div class="mac-grid hidden-macs" id="hidden-macs-' + index + '">';
-                        hiddenMacs.forEach(mac => {
-                            hiddenMacsHtml += `
-                                <div class="mac-item">
-                                    <span>${mac}</span>
-                                    <button class="btn-copy" onclick="copyText('${mac}', this)">Kopieren</button>
-                                </div>
-                            `;
-                        });
-                        hiddenMacsHtml += '</div>';
-                        
-                        macsHtml += hiddenMacsHtml;
-                        macsHtml += `<button class="btn-show-more" onclick="toggleMacs(${index}, this)">+ ${hiddenMacs.length} weitere MACs anzeigen</button>`;
-                    }
-
-                    card.innerHTML = `
-                        <div class="card-header">• DAILY UPDATES • CodeSnack •</div>
-                        ${urlHtml}
-                        ${macsHtml}
-                    `;
-                    
-                    container.appendChild(card);
+        // SUCHE (nur im STBemu Tab aktiv)
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const filtered = allData.filter(item => 
+                item.url.toLowerCase().includes(term) && item.macs && item.macs.length > 0
+            );
+            
+            const container = document.getElementById('stbemu-container');
+            container.innerHTML = '';
+            if(filtered.length === 0) {
+                container.innerHTML = '<p class="no-data">Keine Treffer.</p>';
+            } else {
+                filtered.forEach((item, index) => {
+                    container.appendChild(createPortalCard(item, index));
                 });
             }
-
-            searchInput.addEventListener('input', (e) => {
-                const term = e.target.value.toLowerCase();
-                const filtered = allData.filter(item => item.url.toLowerCase().includes(term));
-                render(filtered);
-            });
-
-            loadData();
         });
 
-        function copyText(text, btnElement) {
+        // HILFSFUNKTIONEN
+        function copyText(text, btn) {
             navigator.clipboard.writeText(text).then(() => {
-                const originalText = btnElement.textContent;
-                btnElement.textContent = 'Kopiert!';
-                setTimeout(() => { btnElement.textContent = originalText; }, 2000);
+                let original = btn.innerText;
+                btn.innerText = 'Kopiert!';
+                setTimeout(() => btn.innerText = original, 2000);
             });
         }
 
-        function toggleMacs(index, btnElement) {
-            const hiddenDiv = document.getElementById('hidden-macs-' + index);
-            if (hiddenDiv.classList.contains('show')) {
-                hiddenDiv.classList.remove('show');
-                btnElement.textContent = `+ weitere MACs anzeigen`;
+        function toggleMacs(id, btn) {
+            let div = document.getElementById(id);
+            if (div.classList.contains('show')) {
+                div.classList.remove('show');
+                btn.innerText = '+ weitere MACs anzeigen';
             } else {
-                hiddenDiv.classList.add('show');
-                btnElement.textContent = `- Weniger anzeigen`;
+                div.classList.add('show');
+                btn.innerText = '- Weniger anzeigen';
             }
         }
+
+        function copyCombo() {
+            const ta = document.getElementById('combo-textarea');
+            navigator.clipboard.writeText(ta.value).then(() => {
+                alert("Combo-Liste in die Zwischenablage kopiert!");
+            });
+        }
+
+        // Slider Logik (Startet automatisch, wenn Home aktiv ist)
+        let currentSlide = 0;
+        setInterval(() => {
+            const slides = document.querySelectorAll('.slide');
+            if(slides.length === 0) return;
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000);
     </script>
 </body>
 </html>
