@@ -1,84 +1,81 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const dataContainer = document.getElementById('data-container');
+    const container = document.getElementById('data-container');
     const searchInput = document.getElementById('searchInput');
+    const sourceFilter = document.getElementById('sourceFilter');
     let allData = [];
 
-    // Daten aus der JSON-Datei laden
     async function loadData() {
         try {
-            const response = await fetch('stalker_data.json');
-            if (!response.ok) throw new Error('Netzwerkantwort war nicht ok');
-            allData = await response.json();
-            renderCards(allData);
-        } catch (error) {
-            console.error('Fehler beim Laden der Daten:', error);
-            dataContainer.innerHTML = '<p class="no-results">Fehler beim Laden der Daten. Bitte versuche es später erneut.</p>';
+            const resp = await fetch('stalker_data.json');
+            allData = await resp.json();
+            
+            // Quellen filtern
+            const sources = new Set();
+            allData.forEach(item => {
+                if(item.quellen && item.quellen.length > 0) sources.add(item.quellen[0].details);
+            });
+            sources.forEach(s => {
+                const opt = document.createElement('option');
+                opt.value = s; opt.textContent = s;
+                sourceFilter.appendChild(opt);
+            });
+
+            render(allData);
+        } catch (e) {
+            container.innerHTML = '<p>Fehler beim Laden der Daten.</p>';
         }
     }
 
-    // Karten im DOM rendern
-    function renderCards(data) {
-        dataContainer.innerHTML = '';
+    function render(data) {
+        container.innerHTML = '';
         if (data.length === 0) {
-            dataContainer.innerHTML = '<p class="no-results">Keine Ergebnisse gefunden.</p>';
+            container.innerHTML = '<p style="color:#8b949e;">Keine Ergebnisse gefunden.</p>';
             return;
         }
-
-        data.forEach(entry => {
+        data.forEach(item => {
             const card = document.createElement('div');
             card.className = 'card';
+            
+            let macsHtml = '';
+            if (item.macs && item.macs.length > 0) {
+                item.macs.forEach(mac => {
+                    macsHtml += `
+                        <div class="mac-item">
+                            <span>${mac}</span>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('${mac}'); this.textContent='Kopiert!'; setTimeout(()=>this.textContent='Kopieren', 2000)">Kopieren</button>
+                        </div>`;
+                });
+            } else {
+                macsHtml = '<p style="color:#8b949e; font-size:0.8rem;">Keine MACs hinterlegt</p>';
+            }
 
-            // Portal-URL
-            const urlDiv = document.createElement('div');
-            urlDiv.className = 'portal-url';
-            urlDiv.textContent = entry.url;
+            const sourceText = item.quellen && item.quellen.length > 0 ? item.quellen[0].details : 'Unbekannt';
 
-            // MAC-Liste
-            const macListDiv = document.createElement('div');
-            macListDiv.className = 'mac-list';
-
-            entry.macs.forEach(mac => {
-                const macItem = document.createElement('div');
-                macItem.className = 'mac-item';
-
-                const macSpan = document.createElement('span');
-                macSpan.textContent = mac;
-
-                const copyBtn = document.createElement('button');
-                copyBtn.className = 'copy-btn';
-                copyBtn.textContent = 'Kopieren';
-                copyBtn.onclick = () => {
-                    navigator.clipboard.writeText(mac).then(() => {
-                        copyBtn.textContent = 'Kopiert!';
-                        setTimeout(() => { copyBtn.textContent = 'Kopieren'; }, 2000);
-                    });
-                };
-
-                macItem.appendChild(macSpan);
-                macItem.appendChild(copyBtn);
-                macListDiv.appendChild(macItem);
-            });
-
-            // Status (optional)
-            const statusDiv = document.createElement('div');
-            statusDiv.className = 'status';
-            statusDiv.textContent = entry.status || '';
-
-            card.appendChild(urlDiv);
-            card.appendChild(macListDiv);
-            card.appendChild(statusDiv);
-            dataContainer.appendChild(card);
+            card.innerHTML = `
+                <div class="portal-url">${item.url}</div>
+                <div class="mac-list">${macsHtml}</div>
+                <div class="status">Status: ${item.status || 'Unbekannt'}</div>
+                <div class="status">Quelle: ${sourceText}</div>
+            `;
+            container.appendChild(card);
         });
     }
 
-    // Filterfunktion
-    searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        const filteredData = allData.filter(entry =>
-            entry.url.toLowerCase().includes(searchTerm)
-        );
-        renderCards(filteredData);
-    });
+    function filterData() {
+        const term = searchInput.value.toLowerCase();
+        const src = sourceFilter.value;
+        
+        const filtered = allData.filter(item => {
+            const matchTerm = item.url.toLowerCase().includes(term);
+            const itemSource = item.quellen && item.quellen.length > 0 ? item.quellen[0].details : '';
+            const matchSrc = src === '' || itemSource === src;
+            return matchTerm && matchSrc;
+        });
+        render(filtered);
+    }
 
+    searchInput.addEventListener('input', filterData);
+    sourceFilter.addEventListener('change', filterData);
     loadData();
+});loadData();
 });
