@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(data => {
                 allData = data;
                 
-                // Quellen für das Dropdown-Menü sammeln
                 const sources = new Set();
                 allData.forEach(function(item) {
                     if (item.quellen && item.quellen.length > 0) {
@@ -88,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadData();
 });
 
-// Hilfsfunktion für die Copy-Buttons (wird global benötigt)
 function copyMac(mac, btnElement) {
     navigator.clipboard.writeText(mac).then(function() {
         const originalText = btnElement.textContent;
