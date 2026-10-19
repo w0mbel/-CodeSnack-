@@ -3,32 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSnack – Portal & MAC Liste</title>
+    <title>CodeSnack - Portal & MAC Liste</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- HEADER & NAVIGATION -->
     <header>
-        <h1>CodeSnack</h1>
-        <p>Automatisierte Sammlung von IPTV-Portalen und MAC-Adressen</p>
-        <div class="social-links">
-            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
-            <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
-            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <div class="logo-container">
+            <h1 class="logo">&lt;/&gt;CodeSnack/&gt;</h1>
         </div>
+        <nav class="tabs">
+            <button class="tab-btn active" data-target="home">Home</button>
+            <button class="tab-btn" data-target="download">Download</button>
+            <button class="tab-btn" data-target="guide">Userguide</button>
+        </nav>
     </header>
+
     <main>
-        <div class="filters">
-            <input type="text" id="searchInput" placeholder="Suche nach Portal-URL...">
-            <select id="sourceFilter">
-                <option value="">Alle Quellen</option>
-            </select>
-        </div>
-        <div id="data-container">
-            <!-- Karten werden hier eingefügt -->
-        </div>
+        <!-- HOME SECTION -->
+        <section id="home" class="tab-content active">
+            <!-- SLIDER BANNER -->
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active">
+                        <img src="https://via.placeholder.com/1000x300/0d1117/00e5ff?text=STBEMU+LIVE+for+Windows+%26+Android+TV" alt="Banner 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/1000x300/0d1117/00ff00?text=Mobile+%26+Tablet+V1.2.1" alt="Banner 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://via.placeholder.com/1000x300/0d1117/0088cc?text=Join+our+Telegram+Community" alt="Banner 3">
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+
+            <!-- SUCHE -->
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Suche nach Portal-URL...">
+            </div>
+
+            <!-- DATEN KARTEN -->
+            <div id="data-container">
+                <!-- Karten werden per JS eingefügt -->
+            </div>
+        </section>
+
+        <!-- DOWNLOAD SECTION -->
+        <section id="download" class="tab-content">
+            <h2 class="section-title">DOWNLOAD <span class="green">CENTER</span></h2>
+            <p class="section-subtitle">Choose your platform to get started / Plattform auswählen</p>
+
+            <div class="download-grid">
+                <!-- Card 1: Mobile -->
+                <div class="download-card">
+                    <div class="dl-img-placeholder"></div>
+                    <h3>STBEMU LIVE <br><span class="green">Mobile & Tablet</span></h3>
+                    <p>The ultimate IPTV experience. No Portal or MAC addresses required.</p>
+                    <a href="#" class="btn btn-green">Download Mobile (APK/IPA)</a>
+                    <div class="dl-stats">2,148 downloads | (Last updated: Heute)</div>
+                </div>
+
+                <!-- Card 2: Windows -->
+                <div class="download-card">
+                    <div class="dl-img-placeholder"></div>
+                    <h3>STBEMU LIVE <br><span class="cyan">Windows PC</span></h3>
+                    <p>Stop searching for emulators! Experience seamless streaming directly on your PC.</p>
+                    <a href="#" class="btn btn-cyan">Download for Windows (RAR/EXE)</a>
+                    <div class="dl-stats">3,242 downloads | (Last updated: Heute)</div>
+                </div>
+
+                <!-- Card 3: Android TV -->
+                <div class="download-card">
+                    <div class="dl-img-placeholder"></div>
+                    <h3>STBEMU LIVE <br><span class="green">Android TV & Box</span></h3>
+                    <p>Transform your living room! Optimized specifically for Android TV.</p>
+                    <a href="#" class="btn btn-green">Download Android TV (APK)</a>
+                    <div class="dl-stats">1,500 downloads | (Last updated: Heute)</div>
+                    <div class="dl-code">
+                        Downloader App Code:<br>
+                        <strong>[ 5154921 ]</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- USERGUIDE SECTION -->
+        <section id="guide" class="tab-content">
+            <div class="guide-container">
+                <!-- ENGLISCH -->
+                <h2>STB Emu Setup Guide & User Manual</h2>
+                <h3>Ultimate Setup, Portals & MAC Addresses</h3>
+                
+                <h4>What is STB Emu?</h4>
+                <p>STB Emu is a powerful emulator that allows you to experience IPTV services on your Android devices and Smart TVs.</p>
+
+                <h4>How to install</h4>
+                <ul>
+                    <li><strong>Android Devices:</strong> Open the Google Play Store and search for "STB Emu".</li>
+                    <li><strong>Smart TVs:</strong> Find the app in the official app store.</li>
+                </ul>
+
+                <h4>How to Configure Portals and MAC Addresses</h4>
+                <ul>
+                    <li><strong>Open Settings:</strong> Launch the app and go to the top-right menu.</li>
+                    <li><strong>Profiles:</strong> Select "Profiles" and then "Add Profile".</li>
+                    <li><strong>Portal Settings:</strong> Enter the Portal URL (e.g., http://url/c).</li>
+                    <li><strong>STB Configuration:</strong> Enter the MAC Address from our list.</li>
+                </ul>
+
+                <h4>Common Errors & Solutions</h4>
+                <p><strong>Authentication Failed:</strong> The MAC address is in use or expired. Check our latest daily posts.</p>
+                <p><strong>Host Not Found:</strong> Double-check the Portal URL for typos.</p>
+
+                <hr>
+
+                <!-- DEUTSCH -->
+                <h2>STB Emu Anleitung & Benutzerhandbuch</h2>
+                <h3>Ultimatives Setup, Portale & MAC-Adressen</h3>
+                
+                <h4>Was ist STB Emu?</h4>
+                <p>STB Emu ist ein leistungsstarker Emulator, mit dem du IPTV-Dienste auf deinen Android-Geräten und Smart-TVs nutzen kannst.</p>
+
+                <h4>Installation</h4>
+                <ul>
+                    <li><strong>Android-Geräte:</strong> Öffne den Google Play Store und suche nach "STB Emu".</li>
+                    <li><strong>Smart-TVs:</strong> Suche die App im offiziellen App-Store deines TVs.</li>
+                </ul>
+
+                <h4>Portale und MAC-Adressen konfigurieren</h4>
+                <ul>
+                    <li><strong>Einstellungen öffnen:</strong> Starte die App und gehe ins Menü oben rechts.</li>
+                    <li><strong>Profile:</strong> Wähle "Profiles" und dann "Add Profile".</li>
+                    <li><strong>Portal-Einstellungen:</strong> Gib die Portal-URL ein (z.B. http://url/c).</li>
+                    <li><strong>STB-Konfiguration:</strong> Gib die MAC-Adresse aus unserer Liste ein.</li>
+                </ul>
+
+                <h4>Häufige Fehler & Lösungen</h4>
+                <p><strong>Authentication Failed (Anmeldung fehlgeschlagen):</strong> Die MAC-Adresse wird bereits benutzt oder ist abgelaufen. Schau in unsere neuesten Listen.</p>
+                <p><strong>Host Not Found (Server nicht gefunden):</strong> Überprüfe die Portal-URL auf Tippfehler.</p>
+            </div>
+        </section>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
