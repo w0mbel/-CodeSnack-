@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSnack – Portal & MAC Liste</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>CodeSnack</h1>
-        <p>Aktuelle Portal-URLs und MAC-Adressen</p>
+        <p>Automatisierte Sammlung von IPTV-Portalen und MAC-Adressen</p>
+        <div class="social-links">
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
     </header>
     <main>
-        <div class="search-container">
+        <div class="filters">
             <input type="text" id="searchInput" placeholder="Suche nach Portal-URL...">
+            <select id="sourceFilter">
+                <option value="">Alle Quellen</option>
+            </select>
         </div>
         <div id="data-container">
-            <!-- Die Datenkarten werden hier per JavaScript eingefügt -->
+            <!-- Karten werden hier eingefügt -->
         </div>
     </main>
     <script src="script.js"></script>
