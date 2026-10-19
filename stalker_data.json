@@ -13,5 +13,2861 @@
       "00:1A:79:YY:YY:YY"
     ],
     "status": "online"
+  },
+  {
+    "url": "http://103.176.90.139/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://1234up.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://168.119.44.162:2080/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://178.63.13.164:88/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://185.190.38.38:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://192.142.44.52/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://192.99.19.27:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://194.62.214.171/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://204.52.191.254/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://204.52.191.82/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://23.94.101.233/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://23232.top/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://44.vb4444.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://45.159.94.49:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://4connect.link/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://4kpro2.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://4y-ott.online/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://5.255.105.5/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://5.6350.top/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://6.iptv11.is/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://a.stroj-bt.com:89/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://a111.info/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://aaiptv.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://amster9216.pro:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://anonymoustv.club/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://apkonrev.store:8080/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://apksmart.dino.ws/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://app.mm88.com.bd/stalker_portal/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://auth.streamtv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:33",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://avare.kingtv.pw/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:32",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://b1iptv.de/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://backup.xp1.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://bigline.club:8080/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://brutus.biz:2082/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://btc.mining-vegasbaby.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://cbrlig.com:8080/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://cigo.nasatv.eu/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://clientsportals.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:33",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://clubxc.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:33",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://d.devtv.cc/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:33",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://d.tvdark.eu/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:33",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://danatv.tv.streamtv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://datacentar.org/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:33",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://deflix.pro/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://delta8k.xyz/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:45",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://dinofox.sbs/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://dksmedia.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://dp-elite.net:2095/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://dragoniptv.de/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://drks.info:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://esogalaxiusnext.tech/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://esv5.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://eu.majes-line.co/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://europeprime.xyz:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://exchange.jinbox.nl:1339/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://exclusifott.pro/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://exm3u.123tv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://fastopen.live:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://fastrunner.live:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://foxbleu.pro/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:34",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://frt23.mi20.cc/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://gauloise.cc/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://gfr5.mi20.cc/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://globaltv1.net:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://hottest.vip/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://innovationdns.eu/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://innovationpro.nl/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://ip.ktlsattv.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptv.darktv.in/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptv.jinbox.nl/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptv1.kavkom.tv:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptvch2.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptvnow.nl/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptvs4.ultapulta.com/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://iptvswiss.com.123tv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://ix.kingtv.pw/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://job.avrik.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:35",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://josko.magovi.uk:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://kaantv.net:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://king-box.club/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://king.viviotv.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://klaratv.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://lilitv.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.anubtv.sbs/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.clear-ocean.link/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.crystal-ott.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.dino.ws/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.godofiptv.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.iptvgoat.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.kahr4a.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.mag7070.eu/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.maxir.biz:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.moja-teve9.me/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.protv.cc/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:47",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.tivi-one.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.tivi-ott.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.trxdnscloud.ru/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:36",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.tvdsz.cc/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.vueott.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://line.watchtivo-8k.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://lookontv.net:2095/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://m.devbox.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://m.treexx.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://m.tvmera.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.abcdxyz.one/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.cdnmax.cc/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.dino.ws/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.marsweb.co/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.max-cdn.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.premiumplus.tv/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mag.ugoiptv.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://magnum-ott.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://main.light-ott.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://main2.cwdn.cx/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:37",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://maxiptv.streamtv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://me.mdmfista.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://mutant.arrox.top/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://nasaiptv.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://new.dittotvv.cc/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://new.gprod.co/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://new.nexatv.be/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://nexusconnects.org/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://nicolaj.123tv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://nimi.sytes.net:8080/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://nk.team-tx.st/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://odm391.xyz/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:49",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://oktay-can-mdiya-hack.streamtv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://one4alltech.net:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://onrev.xyz/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://orkatv.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://ott.kosnet.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://otx.arabitv5.com:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:38",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://owliptv.gentv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://p1.iptvrocket.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://p1.john2.co.uk/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://paplive.me:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pars01.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pera-on.cyou:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://petarxc.ddns.net:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://plustv.ws/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pointpython.streamtv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pon.access.ly/stalker_portal/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:47",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://portal.free-net.tv/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://portal.magictvsuper.asia/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://portal4k.actor/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://predator007.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://primary4.magbox.tv/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://prm.worldip.nl/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pro.8k-strong.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pro.netmos.ovh:7355/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:39",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pro.premiummrzoo.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://pro.testbestrest.one/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://procdnnet.eu/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://ra1.xyz/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:51",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://replaitv.vipserver.store:8000/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://royaltv.me:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://saray68.darktv.nl/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://sbhgoldpro.org/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://scorpioniptv.com:2052/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://scratchpost.co.uk/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://sideriodomi.ottc.pro/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://skipcf.cwdn.cx/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://skunkytv.live/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://st1.ipweb.site/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://stalker.ugoiptv.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://stb.homeiptv.org/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://stb.iphd.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://suiptv265.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://superiors.info/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:40",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://technologycloud.eu/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tkiptv.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://torcidaiptv.gentv.to:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tr.simotvgold.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://trex.8kott.xyz/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://troublesupport.my.to/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://trxx.in/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tv.cloudcdn.online/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tv.deirnet.ps/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tv.greatstar.me/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tv.tvdark.eu/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://tv.zaintv.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://typhoonott.com:8789/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://uhd3.one/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:46",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://ukilo.top/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://vitaxiotem.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://vod.supremetv.live/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://vodkom.net:88/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://vpn.connectra1.net/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:41",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://vpn.vivioelectronics.top/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://weaseltv.live/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://web2021.biz:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://wisdomiptv.com/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://wtc05.mi20.cc/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://wyveep.com:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://xc.tvset.top/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://xegd.ultapulta.com/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://xp1.tv/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:42",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://z.zcatt.cc/stalker_portal/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://z1.babo01.com:8080/c",
+    "macs": [],
+    "status": "BAD",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:54",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://z1mag.xyz:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://zam4u.co.uk:2086/c",
+    "macs": [],
+    "status": "WARN",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://zenroom.live/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://zerotv.eu:8080/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
+  },
+  {
+    "url": "http://ziggo.pro/c",
+    "macs": [],
+    "status": "OK",
+    "meta": {},
+    "quellen": [
+      {
+        "skript": "StalkerCrawler",
+        "aktion": "update",
+        "zeitpunkt": "2026-10-19 10:28:43",
+        "details": "Quelle: TXT-Import"
+      }
+    ]
   }
 ]
